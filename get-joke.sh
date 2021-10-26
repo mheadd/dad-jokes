@@ -13,11 +13,6 @@ if [[ ! $(which cowsay) ]]; then
   exit 1
 fi
 
-if [[ ! $(which lolcat) ]]; then
-  echo "More lols with lolcat. Promise! https://formulae.brew.sh/formula/cowsay" >&2
-  exit 1
-fi
-
 # Get the list of jokes from fatherhood.gov.
 jokes=$(curl -s $jokes_json)
 
@@ -36,5 +31,5 @@ cow_to_say=$(find /usr/local/Cellar/cowsay/3.04/share/cows/ -name "*.cow" | shuf
 
 # Say the joke and punchline with cowsay.
 echo ""
-printf "%s \n %b" "$joke_opener" "$joke_response" | cowsay -f "$cow_to_say" | lolcat
+printf "%s \n %b" "$joke_opener" "$joke_response" | cowsay -f "$cow_to_say" 
 echo ""
