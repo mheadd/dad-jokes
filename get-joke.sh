@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Dad Jokes API endpoint
-jokes_json="https://fatherhood.gov/jsonapi/node/dad_jokes"
+jokes_json="https://www.fatherhood.gov/jsonapi/node/dad_jokes"
+
+# Where are all the cows?
+cows_directory="/opt/homebrew/Cellar/cowsay/3.04_1/share/cows/"
 
 # Where are all the cows?
 cows_directory="/opt/homebrew/Cellar/cowsay/3.04_1/share/cows/"
