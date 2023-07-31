@@ -6,9 +6,6 @@ jokes_json="https://www.fatherhood.gov/jsonapi/node/dad_jokes"
 # Where are all the cows?
 cows_directory="/opt/homebrew/Cellar/cowsay/3.04_1/share/cows/"
 
-# Where are all the cows?
-cows_directory="/opt/homebrew/Cellar/cowsay/3.04_1/share/cows/"
-
 if [[ ! $(which jq) ]]; then
   echo "The jokes are way funnier if you have the jq utility installed. https://stedolan.github.io/jq/" >&2
   exit 1
