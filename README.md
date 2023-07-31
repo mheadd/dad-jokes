@@ -5,8 +5,8 @@ Using the Dad Jokes API from fatherhood.gov.
 ### Usage
 
 ```bash
-~$ chmod +x get-jokes.sh
-~$ ./get-jokes.sh
+~$ chmod +x get-joke.sh
+~$ ./get-joke.sh
 ```
 
 ### Output
